@@ -2,7 +2,7 @@
 layout: page
 title: "About Me"
 date: 2013-01-03 22:04
-comments: fals
+comments: false
 sharing: true
 footer: true
 ---
@@ -28,13 +28,13 @@ Find me on the web
 [avanade]: http://www.avanade.fi/
 [linkedin]: http://www.linkedin.com/in/henrituomola
 
-[imgFacebook]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/facebook.png
-[imgLinkedin]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/linkedin.png
-[imgTwitter]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/twitter.png
-[imgGithub]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/github.png
-[imgFlickr]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/flickr.png
-[imgFoursquare]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/foursquare.png
-[imgDelicious]: http://mndfi.azurewebsites.net/Content/images/purty-social-icons/PNG/delicious.png
+[imgFacebook]: /images/purty-social-icons/PNG/facebook.png
+[imgLinkedin]: /images/purty-social-icons/PNG/linkedin.png
+[imgTwitter]: /images/purty-social-icons/PNG/twitter.png
+[imgGithub]: /images/purty-social-icons/PNG/github.png
+[imgFlickr]: /images/purty-social-icons/PNG/flickr.png
+[imgFoursquare]: /images/purty-social-icons/PNG/foursquare.png
+[imgDelicious]: /images/purty-social-icons/PNG/delicious.png
 
 [fb]: http://www.facebook.com/henri.tuomola
 [li]: http://fi.linkedin.com/in/henrituomola
