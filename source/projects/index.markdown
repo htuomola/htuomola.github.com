@@ -5,6 +5,7 @@ date: 2013-01-03 21:52
 comments: true
 sharing: true
 footer: true
+alias: /wp7/
 ---
 
 Windows Phone

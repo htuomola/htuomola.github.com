@@ -5,6 +5,7 @@ date: 2011-11-15 21:59
 comments: true
 sharing: true
 footer: true
+alias: /wp7/metropas/privacy/
 ---
 
 Last updated: 15 November 2011.
