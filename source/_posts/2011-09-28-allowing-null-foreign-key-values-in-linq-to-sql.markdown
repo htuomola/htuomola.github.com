@@ -25,40 +25,43 @@ Before proceeding any further, **read the error message carefully**. Then read i
 
 So the first point here is to check if Place.Location really is null. In my case it was and that was perfectly fine (business logic –wise) but apparently SQL Compact thought otherwise. Here’s the relevant declarations from code:
 
-    [Column]
-    internal int LocationId;
-     
-    private EntityRef<GeoLocation> _location;
-     
-    [Association(Storage = "_location", ThisKey = "LocationId", 
-        OtherKey = "Id", IsForeignKey = true)]
-    public GeoLocation Location
+{% codeblock lang:csharp %}
+[Column]
+internal int LocationId;
 
+private EntityRef<GeoLocation> _location;
+ 
+[Association(Storage = "_location", ThisKey = "LocationId", 
+	OtherKey = "Id", IsForeignKey = true)]
+public GeoLocation Location
+{% endcodeblock %}
+	
 Next, I searched for the MSDN documentation, Google and Stack Overflow on Linq2Sql and nullable foreign keys without finding anything relevant. I expected to find something like a property “Nullable” from [AssociationAttribute][assocAttr]. Nope. All I could find was [ColumnAttribute.CanBeNull][colAttrCanBeNull] property but my problem was that the Location field has an Association attribute, not column. Then I realized that there’s the LocationId field that is used to store the Id of the referenced table. I had completely forgotten it as it’s more like “necessary boilerplate code” than often used data.
 
 Obviously the id field should be able to be null so I applied the `“CanBeNull=true”` attribute to my LocationId attribute and redeployed the app. Still, I got an SQLException of a different kind (which I wasn’t able to reproduce for this blog post). Basically it said that LocationId could not contain a null value. Thinking again (yeah, this wasn’t my brightest moment) I realized that as the field is of type int, it doesn’t allow nulls. So I defined it as nullable integer and redeployed the app again. This time it worked! While testing it some more I noticed that the CanBeNull=true declaration seems to be unnecessary once the field is defined as nullable. So the complete code for a nullable foreign key property is:
-
-	[Column]
-	internal int? LocationId;
-	 
-	private EntityRef<GeoLocation> _location;
-	 
-	[Association(Storage = "_location", ThisKey = "LocationId", 
-	    OtherKey = "Id", IsForeignKey = true)]
-	public GeoLocation Location
+{% codeblock lang:csharp %}
+[Column]
+internal int? LocationId;
+ 
+private EntityRef<GeoLocation> _location;
+ 
+[Association(Storage = "_location", ThisKey = "LocationId", 
+	OtherKey = "Id", IsForeignKey = true)]
+public GeoLocation Location
+{
+	get { return _location.Entity; }
+	set
 	{
-	    get { return _location.Entity; }
-	    set
-	    {
-	        RaisePropertyChanging("Location");
-	        _location.Entity = value;
-	 
-	        if (value != null)
-	            LocationId = value.Id;
-	 
-	        RaisePropertyChanged("Location");
-	    }
+		RaisePropertyChanging("Location");
+		_location.Entity = value;
+ 
+		if (value != null)
+			LocationId = value.Id;
+ 
+		RaisePropertyChanged("Location");
 	}
+}
+{% endcodeblock %}
 
 Hope this helps someone who’s wondering the same thing.
 
