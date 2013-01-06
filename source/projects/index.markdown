@@ -2,8 +2,8 @@
 layout: page
 title: "projects"
 date: 2013-01-03 21:52
-comments: true
-sharing: true
+comments: false
+sharing: false
 footer: true
 alias: /wp7/
 ---

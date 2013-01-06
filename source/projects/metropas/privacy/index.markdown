@@ -2,8 +2,8 @@
 layout: page
 title: "Metropas Privacy Notice"
 date: 2011-11-15 21:59
-comments: true
-sharing: true
+comments: false
+sharing: false
 footer: true
 alias: /wp7/metropas/privacy/
 ---
