@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VS 2012 Update 2 March CTP, WP8 dev tools & portable class libraries - not so fast"
+title: "Visual Studio 2012 Update 2 March CTP, WP8 dev tools & portable class libraries - not so fast"
 date: 2013-03-22 19:13
 comments: true
 categories: 
