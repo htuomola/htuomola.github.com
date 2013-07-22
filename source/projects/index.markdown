@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "projects"
-date: 2013-01-03 21:52
+date: 2013-07-22 19:21
 comments: false
 sharing: false
 footer: true
@@ -10,8 +10,12 @@ alias: /wp7/
 
 Windows Phone
 ---
-I've been doing Windows Phone 7 development out of personal interest since it launched back fall 2010. I have currently published one application called Metropas. You can find more information about it via the top navigation menu: Windows Phone 7 -> Metropas.
+I've been doing Windows Phone development out of personal interest since it launched back fall 2010. I have currently published one application called Metropas. You can find more information about it [here][Metropas].
 
-Projects: 
+Windows 8
+---
+I've developed a [Kippt][kippt] Windows 8 client called Klipit as a way to study the way to develop Windows 8 applications and also because I thought it might be useful. See [here][klipit] for more.
 
-- [Metropas](metropas/)
+[Metropas]: metropas/
+[kippt]: http://kippt.com
+[klipit]: klipit/

@@ -13,6 +13,7 @@ Metropas is a Helsinki region journey planning application for Windows Phone 7. 
 [Download Metropas for Windows Phone][marketplaceLink]
 
 Follow Metropas on twitter: [@metropas][metropasTwitter] 
+
 [Privacy notice][privacyNotice]
 
 [metropasTwitter]: http://twitter.com/#!/metropas
