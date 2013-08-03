@@ -16,7 +16,7 @@ I've been doing Windows Phone development out of personal interest since it laun
 Windows 8
 ---
 
-#### [Kippt][klipit] ####
+#### [Klipit][klipit] ####
 I've developed a [Kippt][kippt] Windows 8 client called Klipit as a way to study the way to develop Windows 8 applications and also because I thought it might be useful. See [here][klipit] for more.
 
 [Metropas]: metropas/
