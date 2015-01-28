@@ -17,7 +17,8 @@ name: 'Henri Tuomola'
 author: 'Henri Tuomola'
 author_image: "/assets/images/author.jpg"
 
-permalink: /blog/:categories/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
+
 disqus_shortname: htuomola
 
 paginate:	5
