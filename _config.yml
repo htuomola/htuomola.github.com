@@ -17,6 +17,7 @@ name: 'Dirk Fabisch'
 author: 'Dirk Fabisch'
 author_image: "/assets/images/author.jpg"
 
+disqus_shortname: htuomola
 paginate:	5
 
 url: "http://myblog.***.***" # the base hostname & protocol for your site

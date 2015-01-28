@@ -50,6 +50,15 @@
           <a name="topofpage"></a>
           {{content}}
         </section>
+        {% if site.disqus_shortname %}
+          <section class="comments">
+            <div>
+                <h2>Comments</h2>
+                <div id="disqus_thread"></div>
+                {% include disqus_comments.html %}
+            </div>
+          </section>
+        {% endif %}
         <footer class="post-footer">
           <section class="share">
             {% for social in site.social %}
