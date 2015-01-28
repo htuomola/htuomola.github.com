@@ -17,7 +17,10 @@ name: 'Henri Tuomola'
 author: 'Henri Tuomola'
 author_image: "/assets/images/author.jpg"
 
+permalink: /blog/:categories/:year/:month/:day/:title/
+
 paginate:	5
+paginate_path: "/blog/page:num"
 
 url: "http://www.henrituomola.fi" # the base hostname & protocol for your site
 baseurl: ""
