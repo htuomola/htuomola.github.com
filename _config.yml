@@ -24,7 +24,7 @@ disqus_shortname: htuomola
 paginate:	5
 paginate_path: "/blog/page:num"
 
-url: "http://www.henrituomola.fi" # the base hostname & protocol for your site
+url: "http://www.mnd.fi" # the base hostname & protocol for your site
 baseurl: ""
 
 # social icons and sharing options
