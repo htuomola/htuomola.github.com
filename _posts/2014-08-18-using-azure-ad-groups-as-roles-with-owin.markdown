@@ -43,41 +43,41 @@ public class StartUp
 			 });
 		[ .. more configuration as usual .. ] 
 	}
-			 
-	private ClaimsIdentity TransformClaims(ClaimsIdentity identity)
+ 
+	private ClaimsIdentity TransformClaims(ClaimsIdentity identity)
 	{
 		// this check isn't probably necessary if only called from OnResponseSignIn but doesn't hurt either
-	    if (identity.IsAuthenticated)
-	    {
-	        var userObjectId = ClaimsPrincipal.Current.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier").Value;
-	        if (IsMemberOfAdminGroup(userObjectId))
-	            identity.AddClaim(new Claim(System.Security.Claims.ClaimTypes.Role, 
-			AdminRoleName, ClaimValueTypes.String, ClaimIssuer));
-	    }
-	    return identity;
+        if (identity.IsAuthenticated)
+	    {
+	        var userObjectId = ClaimsPrincipal.Current.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier").Value;
+	        if (IsMemberOfAdminGroup(userObjectId))
+	            identity.AddClaim(new Claim(System.Security.Claims.ClaimTypes.Role, 
+			AdminRoleName, ClaimValueTypes.String, ClaimIssuer));
+	    }
+	    return identity;
 	}		
 		
-	private bool IsMemberOfAdminGroup(string userObjectId)
+	private bool IsMemberOfAdminGroup(string userObjectId)
 	{
-	    try
-	    {
-	        // Get the access token
-	        var authContext = new AuthenticationContext(_authority);
-	        var credential = new ClientCredential(ClientId, ClientKey);
-	        AuthenticationResult result = authContext.AcquireToken("https://graph.windows.net", credential);
-
-	        var clientRequestId = Guid.NewGuid();
-	        var graphSettings = new GraphSettings {ApiVersion = "2013-04-05"};
-	        var graphConnection = new GraphConnection(result.AccessToken, clientRequestId, graphSettings);
-	        // check group membership
-	        bool isMemberOf = graphConnection.IsMemberOf(AdminGroupId, userObjectId);
-	        return isMemberOf;
-	    }
-	    catch (Exception e)
-	    {
-	        _logger.ErrorException("An exception occurred while checking admin group membership", e);
-	        return false;
-	    }
+		try
+		{
+			// Get the access token
+            var authContext = new AuthenticationContext(_authority);
+			var credential = new ClientCredential(ClientId, ClientKey);
+			AuthenticationResult result = authContext.AcquireToken("https://graph.windows.net", credential);
+		
+			var clientRequestId = Guid.NewGuid();
+			var graphSettings = new GraphSettings {ApiVersion = "2013-04-05"};
+			var graphConnection = new GraphConnection(result.AccessToken, clientRequestId, graphSettings);
+			// check group membership
+            bool isMemberOf = graphConnection.IsMemberOf(AdminGroupId, userObjectId);
+			return isMemberOf;
+	    }
+	    catch (Exception e)
+	    {
+	        _logger.ErrorException("An exception occurred while checking admin group membership", e);
+	        return false;
+	    }
 	}
 }
 {% endhighlight %}
