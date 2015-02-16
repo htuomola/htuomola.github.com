@@ -15,29 +15,14 @@ Please note that this is my personal website and the opinions expressed here mig
 
 Find me on the web
 ------------
-[![Facebook][imgFacebook]][fb]
-[![LinkedIn][imgLinkedin]][li]
-[![Twitter][imgTwitter]][tw]
-[![GitHub][imgGithub]][gh]
-[![Flickr][imgFlickr]][fl] 
-[![Foursquare][imgFoursquare]][4sq]
-[![Delicious][imgDelicious]][del]
+<div>
+<br />
+	<a href="http://www.facebook.com/henri.tuomola" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+	<a href="http://twitter.com/htuomola" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+	<a href="http://www.linkedin.com/in/henrituomola" title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+	<a href="http://github.com/htuomola" title="Github"><i class="fa fa-github fa-2x"></i></a>	
+	<a href="http://www.flickr.com/htuomola" title="Flickr"><i class="fa fa-flickr fa-2x"></i></a>
+</div>
 
 [avanade]: http://www.avanade.fi/
 [linkedin]: http://www.linkedin.com/in/henrituomola
-
-[imgFacebook]: /assets/images/purty-social-icons/PNG/facebook.png
-[imgLinkedin]: /assets/images/purty-social-icons/PNG/linkedin.png
-[imgTwitter]: /assets/images/purty-social-icons/PNG/twitter.png
-[imgGithub]: /assets/images/purty-social-icons/PNG/github.png
-[imgFlickr]: /assets/images/purty-social-icons/PNG/flickr.png
-[imgFoursquare]: /assets/images/purty-social-icons/PNG/foursquare.png
-[imgDelicious]: /assets/images/purty-social-icons/PNG/delicious.png
-
-[fb]: http://www.facebook.com/henri.tuomola
-[li]: http://fi.linkedin.com/in/henrituomola
-[tw]: http://twitter.com/htuomola
-[gh]: http://github.com/htuomola
-[fl]: http://www.flickr.com/htuomola
-[4sq]: http://foursquare.com/htuomola
-[del]: http://delicious.com/htuomola
