@@ -7,11 +7,11 @@ title: "Henri Tuomola"
 description: > # this means to ignore newlines until "email:"
    Software developer and hobbyist photographer
 
-email: a-mail@mail.mail
+email: henri@mnd.fi
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo_ht.png"
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/site_bg.jpg"
 
 name: 'Henri Tuomola'
 author: 'Henri Tuomola'
@@ -46,6 +46,20 @@ social:
   - icon:	github
     url:	https://github.com/htuomola
     desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	flickr
+    url:	https://www.flickr.com/htuomola
+    desc:	Connect with me on Flickr
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	linkedin
+    url:	http://fi.linkedin.com/in/henrituomola
+    desc:	Connect with me on LinkedIn
     share_url:
     share_title:
     share_link:
