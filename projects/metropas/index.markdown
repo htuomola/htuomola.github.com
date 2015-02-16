@@ -10,7 +10,7 @@ alias: /wp7/metropas/
 
 Metropas is a Helsinki region journey planning application for Windows Phone 7. Metropas is now available in the Windows Phone 7 marketplace, click the image below for more information.
 
-[![Download from Windows Store]({{ root_url }}/images/blog/258x67_WPS_Download_blk.png)][marketplaceLink]
+[![Download from Windows Store]({{ root_url }}/assets/article_images/258x67_WPS_Download_blk.png)][marketplaceLink]
 
 Follow Metropas on twitter: [@metropas][twitter] 
 

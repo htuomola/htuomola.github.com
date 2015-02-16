@@ -20,6 +20,6 @@ Quoting the application description:
 
 If you're using Kippt.com & Windows 8, click the image below to give Klipit a try &mdash; as I said, it's free.
 
-[![Download from Windows Store]({{ root_url }}/images/blog/WindowsStore_badge_en_English_Green_med_258x67.png)][appStoreLink]
+[![Download from Windows Store]({{ root_url }}/assets/article_images/WindowsStore_badge_en_English_Green_med_258x67.png)][appStoreLink]
 
 [appStoreLink]: http://apps.microsoft.com/windows/app/klipit/a5dd3cd1-308f-4992-a998-07fc1961defb "Download from Windows Store"

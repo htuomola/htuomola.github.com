@@ -8,6 +8,8 @@ footer: true
 alias: /wp7/
 ---
 
+<h5 class="index-headline featured"><span>Past</span></h5>
+
 Windows Phone
 ---
 #### [Metropas][Metropas] ####
