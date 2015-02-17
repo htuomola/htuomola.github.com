@@ -7,6 +7,7 @@ categories:
  - windows phone
  - programming
  - .net
+excerpt_separator: <!--more-->
 ---
 
 There are a lots of resources and how-to's about Windows Phone 7 development in the Internet. Nevertheless, I though that I'd write down my own list that I'm using. I'm not saying that these are the most complete or best ones but they're the ones I'm mainly using.
