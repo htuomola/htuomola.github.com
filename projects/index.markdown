@@ -5,7 +5,6 @@ date: 2013-08-03 17:20
 comments: false
 sharing: false
 footer: true
-alias: /wp7/
 ---
 
 <h5 class="index-headline featured"><span>Past</span></h5>

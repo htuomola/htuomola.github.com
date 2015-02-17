@@ -27,6 +27,9 @@ paginate_path: "/blog/page:num"
 url: "http://www.mnd.fi" # the base hostname & protocol for your site
 baseurl: ""
 
+gems:
+  - jekyll-redirect-from
+
 # social icons and sharing options
 social:
   - icon:	twitter
