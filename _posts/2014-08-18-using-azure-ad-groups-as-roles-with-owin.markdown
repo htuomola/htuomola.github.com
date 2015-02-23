@@ -7,6 +7,8 @@ categories: programming azure .net
 featured: true 
 ---
 
+*Update 23.2.2015: Group memberships are now included in the access token and you might want to consider using the new Application Roles functionality instead. Check the [new blog post](/blog/2015/02/23/using-azure-ad-groups-just-got-easier/ "Using Azure AD groups just got easier - and you get roles too") for info.*
+
 I've been working with Azure Active Directory and claims-based authentication on several occasions lately. I like the model and where it's all going but the fast development pace of Azure AD combined with the ever-changing ASP.net authentication introduces some new problems from time to time. 
 
 One such problem on what I didn't find good documentation or a blog post on was how to do group-based authorization in Azure AD. Azure AD has had the concept of groups for a while now and especially in an enterprise scenario they're a common way to restrict access to resources. 
