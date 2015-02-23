@@ -8,5 +8,5 @@ In October I blogged about using [Azure AD groups for access control in an ASP.n
 
 Even better, they've added support for application roles too. Essentially with roles, the application doesn't have to care about groups and the authorization is done on AAD side by assigning users to roles. It's all covered in that same blog post so head over there for details.
 
-[oldPost]: /blog/2014/10/05/azure-ad-groups-with-webapi-and-owin/
+[oldPost]: /blog/2014/08/18/using-azure-ad-groups-as-roles-with-owin/
 [azureAnnouncement]: http://blogs.technet.com/b/ad/archive/2014/12/18/azure-active-directory-now-with-group-claims-and-application-roles.aspx
