@@ -1,7 +1,9 @@
 # Build settings
 markdown: redcarpet
 highlighter: pygments
-
+gems:
+  - jemoji
+  
 # Site settings
 title: "Mediator"
 description: > # this means to ignore newlines until "email:"
@@ -35,7 +37,7 @@ social:
 #  - icon:	facebook
 #    url:	https://facebook.com/???
 #    desc: Connect with me facebook
-#    share_url: //www.facebook.com/sharer.php
+#    share_url: https://www.facebook.com/sharer.php
 #    share_title: ?t=
 #    share_link: "&amp;u="
 
