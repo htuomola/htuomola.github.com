@@ -23,9 +23,8 @@ Getting Started
 ---
 - [Fork this repository](https://github.com/dirkfabisch/mediator)
 - Clone it: `git clone https://github.com/YOUR-USER/mediator`
-- Install the [GitHub Pages gem](https://github.com/github/pages-gem) (includes Jekyll): `bundle install`
-- Install the [Bourbon gem](https://github.com/thoughtbot/bourbon) `gem install bourbon`
-- Run the jekyll server: `jekyll serve`
+- Install the requried gems ([GitHub Pages](https://github.com/github/pages-gem), [Bourbon](https://github.com/thoughtbot/bourbon) and [Jekyll](https://github.com/jekyll/jekyll)): `bundle install`
+- Run the jekyll server: `bundle exec jekyll serve`
 
 You should have a server up and running locally at <http://localhost:4000>.
 
@@ -47,7 +46,7 @@ Main settings for the site
 * **email**: mail address of the site owner
 * **author**: author name
 * **author_image**: small image of author (300x * 300px)
-
+* **disqus**: add a disqus forum for your post
 
 ### Social
 
