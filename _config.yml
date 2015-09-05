@@ -28,6 +28,11 @@ paginate_path: "/blog/page:num"
 
 url: "http://www.mnd.fi" # the base hostname & protocol for your site
 baseurl: ""
+#used to display twitter cards
+twitter_handle: '@dirkfabisch'
+
+#fill in disqus shortname to use disqus
+#disqus: disqus-shortname
 
 gems:
   - jekyll-redirect-from
