@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Versioning binaries with Visual Studio Online / TFS 2015 new build system
-date: 2015-09-05 16:10:00 +03:00
+date: 2015-09-07 18:20:00 +03:00
 tags: "vso tfs build versioning"
 ---
 
