@@ -1,8 +1,7 @@
 # Build settings
-markdown: redcarpet
-highlighter: pygments
-gems:
-  - jemoji
+markdown: kramdown
+highlighter: rouge
+gems: [jemoji, jekyll-paginate, jekyll-redirect-from]
   
 # Site settings
 title: "Henri Tuomola"
@@ -29,13 +28,10 @@ paginate_path: "/blog/page:num"
 url: "http://www.henrituomola.fi" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
-twitter_handle: '@dirkfabisch'
+twitter_handle: '@htuomola'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
-
-gems:
-  - jekyll-redirect-from
 
 # social icons and sharing options
 social:

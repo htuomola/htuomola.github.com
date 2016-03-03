@@ -31,9 +31,24 @@ Step 2: adding version info to the Windows Phone application package
 If we were distributing only assemblies (DLLs) what we've done would already be enough because the version of an assembly can be easily verified through file properties.
 
 As you probably know if you're reading this, the output of a Windows Phone application project is a XAP file and unfortunately it doesn't contain similar version info as assembly files. The workaround I've used is to add build version to the XAP file's name.
-
 <a id="snippet"></a>
-{% gist 4434914 %}
+{% highlight xml %}
+<Target Name="AfterBuild">
+    <GetAssemblyIdentity AssemblyFiles="$(OutputPath)\$(AssemblyName).dll">
+      <Output TaskParameter="Assemblies" ItemName="MyAssemblyIdentities" />
+    </GetAssemblyIdentity>
+    <PropertyGroup>
+      <XapFilenameWithoutExt>$(XapFilename.Replace('.xap',''))</XapFilenameWithoutExt>
+      <OutputXapFilename>$(XapFilenameWithoutExt)_$(Configuration)_%(MyAssemblyIdentities.Version).xap</OutputXapFilename>
+    </PropertyGroup>
+    <Message Text="Removing all files matching with '$(XapFilenameWithoutExt)_*.xap'" />
+    <ItemGroup>
+      <OldXapFiles Include="$(OutputPath)\$(XapFilenameWithoutExt)_*.xap" />
+    </ItemGroup>
+    <Delete Files="@(OldXapFiles)" />
+    <Copy SourceFiles="$(OutputPath)\$(XapFilename)" DestinationFiles="$(OutputPath)\$(OutputXapFilename)" />
+</Target>
+{% endhighlight %}
 
 NOTE: This script intentionally also leaves the original XAP file to the build output folder. I first tried to just rename it but that leads to the debugging not being able to start! Apparently Visual Studio needs that file for deploying it to the emulator and updating the XapFilename property value to the new filename doesn't help! So in the end you'll have two copies of the XAP file, one can be distributed to testers etc. and the other is used for debugging.
 
