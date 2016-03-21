@@ -2,7 +2,8 @@
 markdown: kramdown
 highlighter: rouge
 gems: [jemoji, jekyll-paginate, jekyll-redirect-from]
-  
+
+
 # Site settings
 title: "Henri Tuomola"
 description: > # this means to ignore newlines until "email:"
