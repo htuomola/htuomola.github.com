@@ -20,9 +20,9 @@ After fighting a while with the camera's FTP functionality - and to make the sys
 Architecture and the flow of data is illustrated in the below image.
 ![System architecture](/assets/article_images/2016-03-21-Home surveillance architecture.png)
 
-##Hardware
+## Hardware
 
-###4G Wifi router
+### 4G Wifi router
 
 In order to get an internet connection to the site, we got the Huawei E5377T 4G mobile hotspot. It was rather cheap (100€) and actually has a surprisingly good range. With the current setup I was seeing a range of maybe 20 meters, through one wall. The router has battery but that's not really needed in my setup as it's constantly connected to a power supply.
 
